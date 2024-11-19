@@ -1,0 +1,16 @@
+{
+  "name": "js-obfuscator",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "js-confuser": "^1.7.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "type": "module"
+}

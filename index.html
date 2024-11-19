@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Obfuscation JavaScript</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  </head>
+  <body class="dark-mode">
+    <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden" style="font-family: Manrope, 'Noto Sans', sans-serif;">
+      <div class="layout-container flex flex-col">
+        <!-- Header -->
+        <header class="header-container">
+          <div class="header-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" viewBox="0 0 48 48">
+              <g clip-path="url(#clip0_6_330)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                  fill="currentColor"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_330"><rect width="48" height="48" fill="white"></rect></clipPath>
+              </defs>
+            </svg>
+            <span>anggazyy.me</span>
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="gap-1 px-4 sm:px-6 flex flex-1 justify-center py-5 overflow-scroll">
+          <div class="layout-content-container flex flex-col w-full sm:w-96">
+            <div class="flex h-full min-h-[500px] sm:min-h-[700px] flex-col justify-between bg-[#141118] p-4">
+              <!-- Pengenalan Website -->
+              <div class="intro-text">
+                <p><strong>Selamat datang di Highly Obfuscator</strong></p>
+                <p>Obfuscate.io adalah platform yang dirancang untuk membantu Anda mengamankan dan menyembunyikan kode JavaScript Anda dengan cara mengubahnya menjadi bentuk yang lebih sulit dibaca dan dipahami.</p>
+              </div>
+
+              <!-- Upload and Select Options -->
+              <div class="flex flex-col gap-3 items-center">
+                <!-- File Upload -->
+                <div class="flex flex-col gap-2 w-full max-w-xs">
+                  <label class="text-gray-300 text-sm">Upload JS File</label>
+                  <input
+                    type="file"
+                    id="file-upload"
+                    class="input-file"
+                  />
+                </div>
+
+                <!-- Select Options -->
+                <div class="flex flex-col gap-2 w-full max-w-xs">
+                  <label class="text-gray-300 text-sm">Select Obfuscation Level</label>
+                  <select id="obfuscation-level" class="input-select">
+                    <option value="advanced">Advanced</option>
+                    <option value="impossible">Impossible</option>
+                    <option value="strong">Strong</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Button Obfuscate Now -->
+              <div class="flex justify-center mt-4">
+                <button class="btn-obfuscate" id="obfuscate-button">Obfuscate Now</button>
+              </div>
+            </div>
+
+            <!-- Display Output (Initially Hidden) -->
+            <div id="output-section" class="output-section hidden">
+              <h3 class="output-title">Obfuscated Code</h3>
+              <table id="obfuscated-table" class="output-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Obfuscated Code</th>
+                  </tr>
+                </thead>
+                <tbody id="obfuscated-body"></tbody>
+              </table>
+
+              <div class="output-buttons">
+                <button id="download-btn" class="btn-download">Download Obfuscated File</button>
+                <button id="copy-btn" class="btn-copy">Copy Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2024 Anggazyy Developer UI</p>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script> <!-- Import script.js as module -->
+  </body>
+</html>
